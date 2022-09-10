@@ -2,11 +2,13 @@ body {
   background-color: #F4F4F6;
   color: #334E58;
   font-family: 'Poppins', sans-serif;
-  margin: 48 96 48 96;
+  margin: 48px 96px 48px 96px;
 }
-.header h1 {
-  font-size: 60px;
-  padding: 72 48 0 48;
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 32px;
 }
 .main-navigation {
   font-family: 'Lora', serif;
@@ -35,26 +37,38 @@ body {
   grid-template-columns: 2fr 1fr;
   grid-gap: 50px;
 }
-.container {
-  min-height: 300px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 3fr;
-  grid-gap: 20px;
-}
 .image img {
   width: 400px;
   height: auto;
   display: block;
 }
-.item1{background:LightSkyBlue;}
-.item2{background:LightSalmon;}
-.item3{background:PaleTurquoise;}
-.item4{background:LightPink;}
-.item5{background:PaleGreen;}
-.content-section {
-  font-family: poppins;
-  padding: 10 100 10 75;
+.blog-section-title a {
+  color:#334E58;
+}
+.container-blogs {
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.container-blogs a {
   color: #334E58;
+  font-size: 24px;
+}
+.blog-entry-1 {
+  background: #DBD1DB; 
+  padding: 20px;
+  border-radius: 10px;
+}
+.blog-entry-2 {
+  background: #FCDADA;
+  padding: 20px;
+  border-radius: 10px;
+}
+.blog-entry-3 {
+  background:#C3D5C6;
+  padding: 20px;
+  border-radius: 10px;
 }
 

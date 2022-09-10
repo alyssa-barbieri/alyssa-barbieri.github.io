@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  <link href="/alyssa-barbieri.github.io/styles/main.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Esteban&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
     <title>Classes verse IDs</title>
+  </head>
+      <!-- Site navigation -->
+      <nav class="main-navigation">
+        <ul class="menu nav-menu">
+          <li class="menu-item"><a href="https://alyssa-barbieri.github.io/index.html">Home</a></li>
+          <li class="menu-item"><a href="#">Blog</a></li>
+          <li class="menu-item"><a href="https://github.com/alyssa-barbieri"><ion-icon size="large" name="logo-github"></ion-icon></a></li>
+          <li class="menu-item"><a href="https://www.linkedin.com/in/alyssabarbieri/"><ion-icon size="large" name="logo-linkedin"></ion-icon></a></li>
+        </ul>
+        </nav>
         <body>
           <h1>What's the difference between classes and IDs?</h1>
           <p>Recently I’ve been learning CSS. And I must say, I find it challenging. One of the things that I’ve been wondering lately is when I should use a CSS class vs. an ID. After a bit of research, I've learned some things and I’ll be sharing them here.</p>
@@ -36,5 +51,7 @@
           <p>In my research, two things have become apparent in deciding to use one over the other:</p>
           <ol><li>JavaScript cares a LOT about your choice. CSS might do the same thing if you use either classes or IDs, but with JS in the picture, when to use which will likely become clearer as JS often uses the unique ID of an element to hook into it. I don’t know anything about JS just yet so hopefully it will be come more obvious of how IDs have a more specific effect when coding wtih JS.</li>
           <li>Inheritance of styling in CSS. Styling is applied in CSS based on three factors - source order, specificity, and importance. When applying styling, if there is something that needs to be applied that cannot be done with source order alone, you can achieve singling your elements by also adding specificity. You can do this with IDs. Specificity is also measured by how many specifics are listed in the CSS.</li></ol>
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         </body>
     </html>
