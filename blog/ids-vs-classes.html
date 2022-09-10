@@ -11,46 +11,50 @@
   <meta charset="utf-8">
     <title>IDs vs. classes</title>
   </head>
-      <!-- Site navigation -->
-      <nav class="main-navigation">
-        <ul class="menu nav-menu">
-          <li class="menu-item"><a href="https://alyssa-barbieri.github.io/index.html">Home</a></li>
-          <li class="menu-item"><a href="#">Blog</a></li>
-          <li class="menu-item"><a href="https://github.com/alyssa-barbieri"><ion-icon size="large" name="logo-github"></ion-icon></a></li>
-          <li class="menu-item"><a href="https://www.linkedin.com/in/alyssabarbieri/"><ion-icon size="large" name="logo-linkedin"></ion-icon></a></li>
-        </ul>
-        </nav>
+    <!-- Site navigation -->
+    <nav class="main-navigation">
+      <ul class="menu nav-menu">
+        <li class="menu-item"><a target="_blank" href="https://alyssa-barbieri.github.io/index.html">Home</a></li>
+        <li class="menu-item"><a href="https://alyssa-barbieri.github.io/blog/blog.html">Blog</a></li>
+        <li class="menu-item"><a target="_blank" href="https://github.com/alyssa-barbieri"><ion-icon size="large" name="logo-github"></ion-icon></a></li>
+        <li class="menu-item"><a target="_blank" href="https://www.linkedin.com/in/alyssabarbieri/"><ion-icon size="large" name="logo-linkedin"></ion-icon></a></li>
+      </ul>
+      </nav>
         <body>
+          <div class="blog-container">
           <h1>What's the difference between IDs and classes in CSS?</h1>
           <p>Recently I’ve been learning CSS. And I must say, I find it challenging. One of the things that I’ve been wondering lately is when I should use a CSS class vs. an ID. After a bit of research, I've learned some things and I’ll share them here.</p>
-          <p>For those of you who aren’t very clued into what CSS is and does, I’ll give you an brief overview. Websites are made of HTML - that stands for hypertext markup language (actually not important, just fun to say) - and CSS - cascading style sheets (also not important and a little bit less fun to say). HTML is the bones and structure of the content on the page. You can think of it as the layout of a house. It’s the floor plan. For example:</p>
-          
-          <p>Here I can see that the html (floor plan) is showing that the page will have a header, a paragraph of text, and an image. It’s creating the structure of our house and what will be inside it.</p>
+          <p>For those of you who aren’t very clued into what CSS is and does, I’ll give you an brief overview. Websites are made of HTML - that stands for hypertext markup language (actually not important, just fun to say) - and CSS - cascading style sheets (also not important and a little bit less fun to say).</p> 
+            <p>HTML is the bones and structure of the content on the page. You can think of it as the layout of a house. It’s the floor plan. For example, check out the image below.</p>
+             <div><img display="block" width="250px" src="/alyssa-barbieri.github.io/img/html-example.png"></div> 
+             <p>Here I can see that the html (floor plan) is showing that the page will have a header, a paragraph of text, and an image. It’s creating the structure of our house and what will be inside it.</p>
           <p>CSS on the other hand is all of the styling of the site. You can think of CSS as the interior decorating of the house (albeit really really frustrating interior decorating… like interior decorating with your eyes closed. At least that is how it feels for me right now).</p>
           <p>Within CSS there are the concepts of classes and IDs. You can use classes and IDs as an identifier for styling. It’s a way to isolate an item in a specific area of the site to apply styling. A few key things though about the differences between the two:</p>
           
           <strong>Classes</strong>
           <ul><li>A single class name can be applied to more than one element (item) on a page. Think of this similar to a name. Lots of people can have the same one.</li>
-          <li>An element on a page can have tons (no limit, really) of classes (think of this as people with a first, middle, second middle, last name and then they get married to someone with a double last name, so they then are Barbara Mary Louise Baddington-Forster-Hastings. Barbara goes by A LOT of names, aye? But there’s no limit!). And there is no issue if the page has many elements with the exact same class names (turns out there are three OTHER Barbara Mary Louise Baddington-Forster-Hastings - they made a facebook group).</li>
-          
-          <strong>Versus</strong> 
+          <li>An element on a page can have tons (no limit, really) of classes (think of this as people with a first, middle, second middle, last name and then they get married to someone with a double last name, so they then are Barbara Mary Louise Baddington-Forster-Hastings. Barbara goes by A LOT of names, aye? But there’s no limit!). And there is no issue if the page has many elements with the exact same class names (turns out there are three OTHER Barbara Mary Louise Baddington-Forster-Hastings - they made a facebook group).</li></ul>
           
           <strong>IDs</strong>
           <ul><li>IDs are only to be used once on a page. They are unique - like your fingerprint! But make it alphanumerical, no spaces.</li>
           <li>Each element can have a single ID! (You only have one set of fingerprints!)</li></ul>
           
-          <h2>Other interesting things about classes and IDs to note</h2>
+          <h2>Other interesting things about classes and IDs</h2>
           
           <ul><li>Elements can have BOTH a class and an ID but also don’t need to have either</li>
             <li>IDs have special browser functionality that classes don’t have</li></ul>
             
             <p><strong>Fun fact:</strong> the browser uses IDs to know where to locate a element on a page. If you were to know the element’s ID on a page, you could add that value to the end of a URL and the browser will scroll to that part of the page with that element.</p>
      
-          <h2>"Ok, so when should I use one over the other?"</h2>
+          <h2>"Ok, so when should I use one over the other with CSS?"</h2>
           <p>So that’s all well and good. I get the difference so far. But while I was coding, it still wasn’t entirely clear to me why I should use a class name over the ID (and vice versa) when applying my CSS styling.</p>
           <p>In my research, two things have become apparent in deciding to use one over the other:</p>
-          <ol><li>JavaScript cares a LOT about your choice. CSS might do the same thing if you use either classes or IDs, but with JS in the picture, when to use which will likely become clearer as JS often uses the unique ID of an element to hook into it. I don’t know anything about JS just yet so hopefully it will be come more obvious of how IDs have a more specific effect when coding wtih JS.</li>
-          <li>Inheritance of styling in CSS. Styling is applied in CSS based on three factors - source order, specificity, and importance. When applying styling, if there is something that needs to be applied that cannot be done with source order alone, you can achieve singling your elements by also adding specificity. You can do this with IDs. Specificity is also measured by how many specifics are listed in the CSS.</li></ol>
+          <ol><li>JavaScript cares a LOT about your choice. CSS might do the same thing if you use either classes or IDs, but with JS in the picture, when to use which will likely become clearer as JS often uses the unique ID of an element to hook into it. I don’t know anything about JS just yet so hopefully it will be come more obvious of how IDs have a more specific effect when coding wtih JS.</li><br>
+          <li>Inheritance of styling in CSS. Styling is applied in CSS based on three factors - source order, specificity, and importance. When applying styling, if there is something that needs to be applied that cannot be done with source order alone, you can achieve singling your elements out by also adding further specificity.
+             You can do this with IDs and classes, but IDs will hold more weight than classes as it's as specific as it can get!</li></ol>
+
+            <p>In relation to number 2, I could probably write a much much longer essay about how the CSS cascade works, but I'd rather defer to Mozilla web docs. 
+              There's great documentation on how the cascade works and the algorithm applies styling. You can check it out <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance#understanding_the_cascade">here</a>. I'm looking foward to jumping into JS next week and learning more about how IDs play a role in hooking into elements. Stay tuned to see what I learn!</p></div>
           <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
           <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         </body>
