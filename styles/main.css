@@ -2,7 +2,7 @@ body {
   background-color: #F4F4F6;
   color: #334E58;
   font-family: 'Poppins', sans-serif;
-  margin: 48px 96px 48px 96px;
+  margin: 32px 72px 32px 72px;
 }
 h1 {
   font-size: 40px;
@@ -73,17 +73,17 @@ h2 {
 }
 .blog-container {
   width: 66%;
-  padding: 30px;
 }
 @media (max-width: 740px){
   h1 {
-    font-size: 24px;
+    font-size: 32px;
   }
   h2 {
-    font-size: 18px;
+    font-size: 22px;
   }
   body {
-    font-size: 12px;
+    font-size: 14px;
+    margin-left: 24px;
   }
 .main-navigation li {
   padding: 10px;
@@ -98,7 +98,6 @@ h2 {
   width: 100%;
   display: flex;
   flex-direction: column;
-
 }
 .image img {
   width: 400px;
@@ -115,10 +114,9 @@ h2 {
 }
 .container-blogs a {
   color: #334E58;
-  font-size: 24px;
+  font-size: 18px;
 }
-.blog-container {
+.blog-container div {
   width: 100%;
-  margin: 10px;
 }
 }
