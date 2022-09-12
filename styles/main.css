@@ -53,21 +53,26 @@ h2 {
   gap: 10px;
 }
 .container-blogs a {
-  color: #334E58;
+  color: #ffffff;
   font-size: 24px;
 }
 .blog-entry-1 {
-  background: #DBD1DB; 
+  background: #2e86ab; 
   padding: 20px;
   border-radius: 10px;
 }
 .blog-entry-2 {
-  background: #FCDADA;
+  background: #A23B72;
   padding: 20px;
   border-radius: 10px;
 }
 .blog-entry-3 {
-  background:#C3D5C6;
+  background: #F18F01;
+  padding: 20px;
+  border-radius: 10px;
+}
+.blog-entry-4 {
+  background:#C73E1D;
   padding: 20px;
   border-radius: 10px;
 }
@@ -113,7 +118,7 @@ h2 {
   gap: 10px;
 }
 .container-blogs a {
-  color: #334E58;
+  color: #ffffff;
   font-size: 18px;
 }
 .blog-container div {
