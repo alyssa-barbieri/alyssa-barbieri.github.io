@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link href="/styles/main.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Esteban&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+    <title>JavaScript and the DOM</title>
+  </head>
+    <!-- Site navigation -->
+    <nav class="main-navigation">
+      <ul class="menu nav-menu">
+        <li class="menu-item"><a href="https://alyssa-barbieri.github.io/index.html">Home</a></li>
+        <li class="menu-item"><a href="https://alyssa-barbieri.github.io/blog/blog.html">Blog</a></li>
+        <li class="menu-item"><a target="_blank" href="https://github.com/alyssa-barbieri"><ion-icon size="large" name="logo-github"></ion-icon></a></li>
+        <li class="menu-item"><a target="_blank" href="https://www.linkedin.com/in/alyssabarbieri/"><ion-icon size="large" name="logo-linkedin"></ion-icon></a></li>
+      </ul>
+      </nav>
+        <body>
+          <div class="blog-container">
+          <h1>JavaScript and the DOM</h1>
+            <p>We are in our third week of Foundations at Dev Academy and this week was our first introduction to JavaScript. It was challenging but also really interesting! 
+              In this week's blog post, I'll take you through some general concepts of JavaScript and what we've been learning.</p>
+              <h2>For starters, what's JavaScript and how does it relate to CSS and HTML?</h2>
+            <p>JavaScript, abbreviated JS by the cool kids (or those too lazy to type the full name), is a specific coding language created by Brendan Eich when he was working at Netscape in 1995. It's 
+              a prolific programming language for web development and is used in conjunction with CSS and HTML. I like to use the context of a house when describing how these three languages work 
+              together to create what you see in your browser.
+            </p>
+            <p>HTML is the structure of the house - it’s the code that tells the computer what the layout of the page is and where things should go within that layout. For example, you use HTML to structure 
+              the page with a header at the top and 3 paragraphs in the body. 
+            </p>
+            <p>CSS is the styling of the house - it’s adding a layer of paint, window coverings, tile, and carpet. You use CSS to change the background colour of the page, size of the 
+              text, font, padding, margin, etc.
+              </p>
+            <p><img class="blog-image" src="/img/HTML-CSS-JS.jpeg">
+            </p>
+            <p>JavaScript is the wiring, plumbing, and gas lines in the house - it’s the code that makes your house smart and functional so that you can live comfortably. You can turn on the lights with 
+              the flick of a switch, take a hot shower by turning on the shower tap, and cook food by switching on the gas stove. Similarly, JS is what makes your website smart and able to do 
+              things on command. You use JS to validate form fields, manipulate data, make buttons do specific things when you press them, etc.</p>
+            <h2>What are control flow and loops in JS?</h2>
+            <p>Control flow is the order the computer reads the code in the file to execute so that you can see what you see on the screen. Code is read from the first line at the top to the last 
+              line at the bottom. However, this changes with certain code structures, such as conditionals, functions, and loops. When these are encountered, the code will stop at that section and 
+              do things until the loop is completed (the loop runs as many times as it needs to) or the conditional (if… else) is completed (the conditions are met). So even with a few lines of code, 
+              control flow can be complex. You can read the control flow from top to bottom while also looking at the structure to understand the order of execution, paying specific attention to 
+              functions, loops, and conditionals.</p>
+            <p>You can think of control flow in the context of putting together flatpack bookshelf you bought (as long as you’re the type of person to do things by the manual!). The control flow 
+              is the order you end up putting together the furniture. You do this by reading the numbered instruction manual (think of this as the lines of code and you are the computer). You do 
+              things in the order of the manual starting at number 1.  However, at some steps, you need to do things multiple times. For example, when you need to screw things in 10x to various 
+              corners of the furniture you are making, the instruction manual will list this out action out  once with a 10x in the corner - this would be a loop. So you won’t finish this step 
+              until you’ve screwed in the screws at each corner (10x). Then you would move on to the next step sequentially until you finish. Consider that the last step is a conditional - you 
+              can either screw in the bookshelf to the wall or leave it untethered. You are finished if you don’t want to screw the bookshelf into the wall. If you do want to secure the bookshelf 
+              to the wall, you need to complete the final step, which includes fastening the bookshelf to the wall. Finally, your bookshelf is complete and it was completed via the control flow of 
+              you following the instruction manual in the order of steps listed.</p>
+            <h2>What is the DOM and how do you interact with it?</h2>
+            <p>The DOM or Document Object Model is a web interface comprised of an API maintained by the W3C that handles all of the web’s standards and practices.</p>
+            <p>The DOM was created to help web developers (and anyone using the web, really) navigate and develop for the dynamism of the web by allowing them to:
+              <ul>
+                <li>create and build web documents</li>
+                <li>navigate the structure of web documents</li>
+                <li>add, modify, and/or delete elements and content within web documents</li>
+              </ul>
+            </p>
+            <p>The DOM is code neutral, and does not require JavaScript to interact with it. In fact, one of the main drivers of creating the DOM was having a standard for all people and technologies 
+              to access the DOM (rather than each having its own method).
+            </p>
+            <h3>What is the DOM tree?</h3>
+            <p>The structural representation of the DOM is compared to that of a tree. It starts at the document layer and the root of the tree lies at the top. Following that are children of the parent 
+              node. Descendants, siblings, and parents are all language used to identify the relationship between nodes on the DOM tree.</p>
+              <p><img class="blog-image" src="/img/domstructure.jpeg">
+              </p>
+            <h3>Nodes vs. elements</h3>
+            <p>Nodes are all of the components a web document is made of. Typically, when we find a node in the document, they are often elements of the html so these two terms, nodes and elements, 
+              tend to get mixed up.</p>
+            <p>All elements are nodes in the DOM, but not all nodes are elements (e.g. the text within an h2 element is a ‘leaf node’ but not an HTML element itself).</p>
+            <h2>What are arrays and objects?</h2>
+            <h3>Simple variables</h3>
+            <p>Variables are containers for data in JavaScript. We create variables to contain data so that we can manipulate that data with the code we write.</p>
+            <p><img class='blog-code-image' src="/img/Simple variable.png"></p>
+            <h3>Objects</h3>
+            <p>Objects allow us to group values together into more complex data structures than simple variables that are one-to-one. This means we can store lots of data in an object so that it can have 
+              multiple key (identifier) value (the value associated with that identifier) pairs. We can express the values in an object as name:value pairs.</p>
+            <p><img class='blog-code-image' src="/img/Object with console log.png"></p>
+            <h3>Arrays</h3>
+            <p>Arrays are a specific kind of object that allow us to store multiple values in a single variable. Unlike objects, we store a set of values in the arrays without a key. To access a value in an object, 
+              we use names. For example, using the object example in the image above <code>dog.dogBreed</code> would return <code>"chocolate lab"</code>.
+            </p>
+            <p>Arrays are different in that they index the values or elements in them by assigning each value a number starting from a count of 0. Using the array example in the image below, <code>favDogs[1]</code> returns 
+            <code>"Ginger"</code>.</p>
+            <p><img class="blog-code-image" src="/img/Array favDogs with console log.png" ></p>
+            <h2>What are functions in JS and why are they helpful?</h2>
+            <p>Functions in JavaScript are super useful as you can use them to execute tasks in the code when you want. You can define the function and invoke it separately or define and execute a function at the same time. 
+              This means that functions are really flexible and reusable within your code, which ultimately helps make your code simpler and easier to read.</p>
+          </div>
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        </body>
+    </html>

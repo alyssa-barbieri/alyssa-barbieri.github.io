@@ -79,6 +79,17 @@ h2 {
 .blog-container {
   width: 66%;
 }
+.blog-image {
+  width: 500px;
+  height: auto;
+  display: block;
+}
+.blog-code-image {
+  width: 400px;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
 @media (max-width: 740px){
   h1 {
     font-size: 32px;
@@ -126,5 +137,10 @@ h2 {
 }
 .blog-container {
   width: 100%;
+}
+.blog-image img {
+  width: 320px;
+  height: auto;
+  display: block;
 }
 }
