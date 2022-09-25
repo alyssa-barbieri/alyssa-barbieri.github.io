@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link href="/styles/main.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Esteban&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Problem solving</title>
+</head>
+    <!-- Site navigation -->
+<nav class="main-navigation">
+  <ul class="menu nav-menu">
+    <li class="menu-item"><a href="https://alyssa-barbieri.github.io/index.html">Home</a></li>
+    <li class="menu-item"><a href="https://alyssa-barbieri.github.io/blog/blog.html">Blog</a></li>
+    <li class="menu-item"><a target="_blank" href="https://github.com/alyssa-barbieri"><ion-icon size="large" name="logo-github"></ion-icon></a></li>
+    <li class="menu-item"><a target="_blank" href="https://www.linkedin.com/in/alyssabarbieri/"><ion-icon size="large" name="logo-linkedin"></ion-icon></a></li>
+  </ul>
+</nav>
+<body>
+  <div class="blog-container">
+    <h1>Problem solving</h1>
+    <h2>Tell me about ...</h2>
+    <h3>A time when I was blocked on a simple problem</h3> 
+    <p>
+      We have been doing kata exercises in this sprint which is just a fancy way of saying we are doing small, reptative coding tasks to improve our form and approach through practice. One one 
+      of the gradebook exercises, I had add an array to an empty object. I had thought for sure my code was right but I kept getting an error and I couldn't figure out what the issue was. I had 
+      looked up the code in MDN, researched stackoverflow, followed along to the live coding session, and look at other people's posts about their issues in Discor and nothing stuck out to me as 
+      being the same issue as the one I had encountered. After spending 20 minutes troubleshooting, I asked for help from one of the facilitators. It turns out I had named a variable incorrectly 
+      so the test was failing. It was a little embarassing but I got there in the end. I realised that it was good that I reached out to Gerard when I did, because I potentially could have been 
+      staring at that for much longer!
+    </p>
+    <h3>A time when I elegantly solved a problem</h3>
+    <p>
+      One of the functions we needed to code takes a sentence and maps over every word in that sentence to capitalise the first letter of each word. What gets returned is the sentence with the 
+      correct capitalisation. I was able to solve for this using a for loop and a few built in methods - <code>charAt()</code>, <code>toUpperCase()</code>, <code>split()</code>, <code>slice()</code>, 
+       <code>join()</code>.
+    </p>
+    <p>
+       <img class="blog-image" src="/img/Old function.png" >
+    </p>
+    <p>
+      This worked. But it was pretty wordy and was doing a lot. While working through some problems with other students, Brennan and Rebecca, I came to learn from Brennan that you can refactor the 
+      code so that you reduce the need for creating variables in this case. We worked through it together and were able to use built in methods directly on the sentence to return the capitalised 
+      sentence. We did this using <code>map()</code>. Much of the other code stayed the same but could be simplified. The new function now looks like this.
+    </p>
+    <p> 
+      <img class="blog-image" src="/img/New function.png"> Yay! It works and it's much easier to read. And now I've learned how to refactor the code so that it's methods are directly applied to 
+      the function parameter in cases where this can be done.
+    </p>
+    <h3>Problem-solving techniques and processes I use</h3>
+      <h4>Pseudocode</h4>
+      <p>
+        I started using pseudocode as a way to make sure I understand what I problem I am trying to solve before I set out to solve it. Pseudocode means writing the solution in simple English 
+        in the comments of the code before getting started with writing the code itself. This has been really helpful and I have started doing this regularly. I plan to do this habitually as a 
+        check that I know the problem and solution in plain English first. This also makes it easier to communicate when I need to pull other people into discussions as I've already practiced 
+        explaining it in simple terms.
+      </p>
+      <h4>Trying something new</h4>
+      <p>
+        There are definitely times where I've needed to think outside the box and try something I hadn't tried before during this sprint. Generally, I've been able to get by using Google, console.logging, trial and error, 
+        and reviewing Discord channels. But this time around, those methods helped but weren't always getting me to a solution. I had to try a few new things and that was a great learning experience. 
+        I needed to reach out to coaches and peers this sprint and that was really helpful.
+      </p>
+      <h4>Rubber ducky method</h4>
+      <p>
+        The rubber ducky method simply means describing the problem and your approach out loud to something inanimate like a rubber ducky. I find that when I'm really stuck, I start talking to myself 
+        and going through what I've done so far. I also find myself reading out loud! It helps with my understanding and also makes things feel less heavy (getting it out of my spiralling mind and out in the open).
+      </p>
+      <h4>Console.logging</h4>
+      <p>
+        I feel pretty confident with console.logging to get some answers. However, there was a moment this sprint where I wasn't sure if getting the solution required that I console.log out the object 
+        properties. And it turns out, yes, I needed to do that. It's good to realise that console logging is my friend and I shouldn't be afraid to do it!
+      </p>
+      <h4>Googling</h4>
+      <p>
+        I use Google A LOT. A TON. It is so useful. But I also use it all the time for everything in my life. What was life before Google? Can we just imagine if we had to Bing for help? The world would 
+        be a much less efficient and scarier place.
+      </p>
+      <h4>Asking your peers for help</h4>
+      <p>
+        This was something I tried this week. I saw on Saturday two people were having a coding chat in one of the co-working spaces in Discord. I was having trouble with a question and I joined their 
+        chat to see what they were talking about. It was pretty presumptious of me to just join, but they were super gracious and kind and let me join in. It was really lovely to talk to them and learn 
+        from them. I learned that I shouldn't feel insecure reaching out and also realised that speaking with other students can make my outlook more positive so that I can keep working through problems.
+      </p>
+      <h4>Asking coaches for help</h4>
+      <p> I asked Gerard for help at one point this week and that was not something I had done before. I also made sure to go to all of the live coding sessions which were really helpful. I 
+        feel much more comfortable reaching out for help if I have an issue now that I've done it before.
+      </p>
+      <h4>Improving your process with reflection</h4>
+      <p>
+        I'd like to make sure I do more reflection as time goes on beyond just the prompts for our sprints. I really think reflection solidifies ideas in my mind and I'm trying to take the time to do 
+        that. So often I find that I immediately want to jump into the next problem rather than take a minute to review how the process went and reflect on how I could improve.
+      </p>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
