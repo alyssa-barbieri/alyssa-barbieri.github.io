@@ -2,13 +2,17 @@ body {
   background-color: #F4F4F6;
   color: #334E58;
   font-family: 'Poppins', sans-serif;
+  font-size: 18px;
   margin: 32px 72px 32px 72px;
 }
 h1 {
-  font-size: 40px;
+  font-size: 42px;
 }
 h2 {
-  font-size: 32px;
+  font-size: 28px;
+}
+h3 {
+  font-size: 20px;
 }
 quote {
   font-family: 'Lora', serif;
@@ -96,6 +100,11 @@ quote {
   padding: 20px;
   border-radius: 10px;
 }
+.blog-entry-8 {
+  background: #c77dff;
+  padding: 20px;
+  border-radius: 10px;
+}
 .blog-container {
   width: 66%;
 }
@@ -117,6 +126,9 @@ quote {
   h2 {
     font-size: 22px;
     }
+  h3 {
+    font-size: 18px;
+  }
   body {
     font-size: 14px;
     margin-top: 32px;
